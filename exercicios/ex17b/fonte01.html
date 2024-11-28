@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc.
+
+            Medidas Relatívas
+            em, ex, rem, vw, vh, %.
+
+            Recomendado sempre PX e EM
+
+            16px = 1em
+            */
+            font-size: 1em;
+            font-weight: normal;
+            /* Pesos: lighter, normal, bold, bolder */
+        }
+
+        h1{
+            /*shorthand font*/
+            /*Ordem da descrição da fonte: font-style -> font-weight -> font-size -> font-family.*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem saepe, magnam, ipsa nisi optio similique eum aperiam, molestiae minima assumenda consectetur ipsum nemo. Porro vitae suscipit quisquam distinctio, pariatur voluptatibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, autem quibusdam quaerat non ab tempore excepturi eligendi, voluptates nobis, officiis rerum consequatur. Suscipit, a incidunt dicta reiciendis iste repudiandae odit?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloremque, fugiat dolorem quae perferendis porro dolore vitae molestias excepturi optio illo omnis quas atque cumque neque, quasi quod id non.</p>
+</body>
+</html>
