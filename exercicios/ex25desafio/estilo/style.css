@@ -1,8 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Lilita One", serif;
+    --fonte3: "Sour Gummy", serif;
+}   
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
@@ -19,6 +28,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 9vw;
 }
 
 header > p {
@@ -40,7 +51,12 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
-    
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -50,12 +66,28 @@ section.normal {
 
 section.imagem {
     background-color: rgb(51, 51, 51);
-    color: white
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.436);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.226);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.349);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
 }
 
 footer {
