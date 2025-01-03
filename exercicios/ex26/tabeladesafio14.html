@@ -9,6 +9,12 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        .cinza {
+            color: white;
+            background-color: rgb(77, 77, 77);
+            font-weight: bold;
+        }
+
         table {
             border-collapse: collapse;
             width: 500px;
@@ -20,7 +26,7 @@
             padding: 10px;
         }
 
-        th, td {
+        tr, th, td {
             border: 2px solid gray;
             padding: 3px;
             text-align: center;
@@ -34,7 +40,7 @@
     </h1>
    <table>
 
-    <thead>
+    <thead class="cinza">
         <tr>
             <th scope="col" rowspan="2">Área</th>
             <th scope="col" rowspan="2">Disciplinas</th>
@@ -74,7 +80,7 @@
             <td>0.0</td>    
         </tr>
         <tr>
-            <th colspan="4">Médias de Exatas</th>
+            <th class="cinza" colspan="4">Médias de Exatas</th>
             <td>0.0</td>
         </tr>
         <tr>
@@ -94,7 +100,7 @@
 
     <tfoot>
         <tr>
-            <th scope="row" colspan="4">Média de Humanas</th>
+            <th class="cinza" scope="row" colspan="4">Média de Humanas</th>
             <td>0.0</td>
         </tr>
     </tfoot>
