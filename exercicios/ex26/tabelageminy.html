@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(228, 228, 228);
+        }
+    </style>
+</head>
+<body>
+    <table>
+      <caption>Tabelas Responsivas</caption>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Jan</th>
+          <th>Fev</th>
+          <th>Mar</th>
+          </tr>
+      </thead>
+      <tbody id="tabela-corpo">
+      </tbody>
+    </table>
+  
+    <script>
+      // Array com nomes de produtos (adicione mais conforme necessário)
+      const produtos = ['Playstation 5', 'Lava Louças', 'Copo Térmico', 'Smartphone', 'Notebook', 'Smart TV', 'Fones de Ouvido'];
+  
+      // Função para gerar um número aleatório entre 1 e 100
+      function getRandomNumber() {
+        return Math.floor(Math.random() * 100) + 1;
+      }
+  
+      // Selecionando o tbody da tabela
+      const tabelaCorpo = document.getElementById('tabela-corpo');
+  
+      // Adicionando 7 novas linhas
+      for (let i = 0; i < 7; i++) {
+        const novaLinha = document.createElement('tr');
+  
+        // Criando a célula do produto (com um produto aleatório)
+        const celulaProduto = document.createElement('td');
+        celulaProduto.textContent = produtos[Math.floor(Math.random() * produtos.length)];
+        novaLinha.appendChild(celulaProduto);
+  
+        // Criando as células dos meses com números aleatórios
+        for (let j = 0; j < 12; j++) {
+          const celulaMes = document.createElement('td');
+          celulaMes.textContent = getRandomNumber();
+          novaLinha.appendChild(celulaMes);
+        }
+  
+        // Adicionando a nova linha à tabela
+        tabelaCorpo.appendChild(novaLinha);
+      }
+    </script>
+  </body>
+</html>
