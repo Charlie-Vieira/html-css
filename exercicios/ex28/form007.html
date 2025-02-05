@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="est" id="iest">
+                <optgroup label="Norte">
+                  <option value="AC">Acre</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="PA">Pará</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                  <option value="AL">Alagoas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="SE">Sergipe</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                  <option value="DF">Distrito Federal</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                  <option value="ES">Espírito Santo</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                  <option value="PR">Paraná</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="SC">Santa Catarina</option>
+                </optgroup>
+              </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="Advogado"></option>
+                <option value="Arquiteto"></option>
+                <option value="Assistente Social"></option>
+                <option value="Atleta Profissional"></option>
+                <option value="Bancário"></option>
+                <option value="Biólogo"></option>
+                <option value="Bombeiro"></option>
+                <option value="Caminhoneiro"></option>
+                <option value="Cantor"></option>
+                <option value="Chef de Cozinha"></option>
+                <option value="Cientista da Computação"></option>
+                <option value="Dentista"></option>
+                <option value="Designer Gráfico"></option>
+                <option value="Economista"></option>
+                <option value="Engenheiro Civil"></option>
+                <option value="Enfermeiro"></option>
+                <option value="Escritor"></option>
+                <option value="Farmacêutico"></option>
+                <option value="Fisioterapeuta"></option>
+                <option value="Fotógrafo"></option>
+                <option value="Jornalista"></option>
+                <option value="Médico"></option>
+                <option value="Músico"></option>
+                <option value="Professor"></option>
+                <option value="Programador"></option>
+                <option value="Psicólogo"></option>
+                <option value="Publicitário"></option>
+                <option value="Químico"></option>
+                <option value="Veterinário"></option>
+                <option value="Zootecnista"></option>
+              </datalist>
+        </p>
+
+        <p>
+            <label for="itext">O que você quer ser quando crescer?</label><br>
+            <textarea name="text" id="itext" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
