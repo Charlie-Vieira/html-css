@@ -43,8 +43,8 @@ menu {
 
 menu > ul {
     list-style-type: none;
-
 }
+
 
 menu > ul > li > a {
     display: block;
@@ -53,7 +53,7 @@ menu > ul > li > a {
     text-align: center;
     background-color: rgb(0, 20, 109);
     color: white;
-    border-top: 2px solid rgb(130, 125, 255);
+    border: 1px solid rgb(21, 42, 132);
 }
 
 menu > ul > li > a:hover {
